@@ -76,7 +76,7 @@ export default function Home() {
           className="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg text-sm hover:bg-green-600 transition"
         >
           WhatsApp
-        </a>      
+        </a>
         <div className="space-y-3 text-gray-700">
           <p>
             <strong>Email:</strong> nome@email.com
@@ -96,10 +96,12 @@ export default function Home() {
           Scrivimi una email
         </a>
         <iframe
-          className="w-full h-64 rounded-xl mt-6"
-          src="https://maps.app.goo.gl/ByHTMXHq2Cx3VhQe6"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1283.3433516893986!2d15.182671508170252!3d37.72645809349529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1314065d630b2575%3A0x420eb723e72dae50!2sCinema%20Eden!5e1!3m2!1sit!2sit!4v1780064742581!5m2!1sit!2sit"
+          width="600"
+          height="450"
+          style={{border:0}}
           loading="lazy"
-        />
+        ></iframe>
       </section>
 
       {/* FOOTER */}
