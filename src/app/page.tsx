@@ -1,3 +1,5 @@
+import Header from "@/components/Header";
+  
 export const metadata = {
   title: "Psicologo a Mascali | Dott. Nome Cognome",
   description:
@@ -6,106 +8,260 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="max-w-2xl mx-auto px-6 py-12 space-y-24">
-      {/* NAV */}
-      <header className="flex justify-between items-center py-6 mb-16">
-        <div className="font-semibold">Dott. Nome Cognome</div>
-
-        <nav className="space-x-6 text-sm text-gray-600">
-          <a href="#chi-sono" className="hover:text-gray-900">
-            Chi sono
-          </a>
-          <a href="#servizi" className="hover:text-gray-900">
-            Servizi
-          </a>
-          <a href="#contatti" className="hover:text-gray-900">
-            Contatti
-          </a>
-        </nav>
-      </header>
-
+    <main className="w-full">
+      <Header />
       {/* HERO */}
-      <section className="mb-24">
-        <h1 className="text-5xl font-semibold tracking-tight mb-4">
-          Psicologo a Mascali
-        </h1>
+      <section className="flex flex-col md:flex-row items-center justify-center text-center md:text-left min-h-175 px-6 md:px-12">
 
-        <p className="text-lg text-gray-700 leading-relaxed mb-6">
-          Offro supporto psicologico per ansia, stress e difficoltà personali.
-          Lavoro con un approccio basato sull’ascolto e su strategie concrete di
-          benessere.
-        </p>
+        {/* IMMAGINE */}
+        <div className="flex justify-center mb-10 md:mb-0 md:pr-12">
+          <img
+            src="/Colline.jpg"
+            alt="Studio psicologo"
+            className="rounded-2xl w-full max-w-sm md:max-w-md object-cover"
+          />
+        </div>
 
-        <a
-          href="#contatti"
-          className="inline-block bg-gray-900 text-white px-6 py-3 rounded-full text-sm hover:bg-gray-800 transition"
-        >
-          Prenota un colloquio
-        </a>
+        {/* TESTO */}
+        <div className="max-w-4xl md:pl-12 flex flex-col items-center md:items-start">
+
+          <h1 className="text-4xl md:text-6xl font-semibold tracking-tight mb-6">
+            Psicologo a Palermo
+          </h1>
+
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8 max-w-2xl">
+            Supporto psicologico per ansia, stress e difficoltà personali.
+            Uno spazio di ascolto e lavoro concreto sul benessere psicologico.
+          </p>
+
+          <a
+            href="#contatti"
+            className="inline-block bg-black text-white px-6 py-3 rounded-full"
+          >
+            Prenota un colloquio
+          </a>
+
+        </div>
+
       </section>
 
       {/* CHI SONO */}
-      <section id="chi-sono" className="mb-24">
-        <h2 className="text-2xl font-semibold mb-4">Chi sono</h2>
+      <section className="flex flex-col md:flex-row bg-gray-200">
 
-        <p className="text-gray-700 leading-relaxed">
-          Breve bio professionale. Qui il tuo amico dovrebbe spiegare
-          formazione, approccio terapeutico e filosofia di lavoro in modo
-          semplice e umano.
-        </p>
+        {/* TESTO → deve stare sotto su mobile */}
+        <div className="w-full md:w-1/2 flex items-center justify-center px-6 md:px-12 py-12 order-2 md:order-1">
+
+          <div className="max-w-lg text-center md:text-left">
+
+            <h2 className="text-3xl md:text-5xl font-semibold mb-6">
+              Chi sono
+            </h2>
+
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+          </div>
+
+        </div>
+
+        {/* IMMAGINE → deve stare sopra su mobile */}
+        <div className="w-full md:w-1/2 order-1 md:order-2">
+
+          <img
+            src="/Colline.jpg"
+            alt="Studio"
+            className="w-full h-64 md:h-full object-cover"
+          />
+
+        </div>
+
       </section>
 
       {/* SERVIZI */}
-      <section id="servizi" className="mb-24">
-        <h2 className="text-2xl font-semibold mb-6">Servizi</h2>
+      <section className="flex flex-col md:flex-row">
 
-        <ul className="space-y-3 text-gray-700">
-          <li>• Supporto per ansia e stress</li>
-          <li>• Colloqui individuali</li>
-          <li>• Supporto nei momenti di crisi</li>
-          <li>• Colloqui online e in presenza</li>
-        </ul>
-      </section>
+        {/* IMMAGINE */}
+        <div className="w-full md:w-1/2 flex items-center justify-center p-6 md:p-12 order-1 md:order-1">
 
-      {/* CONTATTI */}
-      <section id="contatti" className="mb-20">
-        <h2 className="text-2xl font-semibold mb-6">Contatti</h2>
-        <a
-          href="https://wa.me/39XXXXXXXXXX"
-          target="_blank"
-          className="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg text-sm hover:bg-green-600 transition"
-        >
-          WhatsApp
-        </a>
-        <div className="space-y-3 text-gray-700">
-          <p>
-            <strong>Email:</strong> nome@email.com
-          </p>
-          <p>
-            <strong>Telefono:</strong> +39 XXX XXX XXXX
-          </p>
-          <p>
-            <strong>Studio:</strong> Mascali, Italia
-          </p>
+          <img
+            src="/Colline.jpg"
+            alt="Approccio terapeutico"
+            className="w-full max-w-sm md:max-w-md rounded-2xl object-cover"
+          />
+
         </div>
 
-        <a
-          href="mailto:nome@email.com"
-          className="inline-block mt-6 bg-gray-900 text-white px-6 py-3 rounded-full text-sm hover:bg-gray-800 transition"
-        >
-          Scrivimi una email
-        </a>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1283.3433516893986!2d15.182671508170252!3d37.72645809349529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1314065d630b2575%3A0x420eb723e72dae50!2sCinema%20Eden!5e1!3m2!1sit!2sit!4v1780064742581!5m2!1sit!2sit"
-          width="600"
-          height="450"
-          style={{border:0}}
-          loading="lazy"
-        ></iframe>
+        {/* TESTO */}
+        <div className="w-full md:w-1/2 flex items-center justify-center px-6 md:px-12 py-12 md:py-16 order-2 md:order-2">
+
+          <div className="max-w-lg flex flex-col text-center md:text-left">
+
+            <h2 className="text-3xl md:text-5xl font-semibold mb-6">
+              Un percorso costruito insieme
+            </h2>
+
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-8">
+              Ogni persona porta con sé una storia unica. Lo spazio terapeutico
+              offre un'occasione per comprendere meglio le proprie difficoltà,
+              valorizzare le proprie risorse e individuare nuove modalità per
+              affrontare le sfide quotidiane.
+            </p>
+
+            {/* CTA centrata solo su mobile */}
+            <div className="flex justify-center md:justify-start">
+              <a
+                href="#contatti"
+                className="inline-block bg-black text-white px-6 py-3 rounded-full"
+              >
+                Contattami
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      {/*SEZIONE MOTIVAZIONALE*/ }
+      <section className="flex flex-col md:flex-row bg-gray-200">
+
+        {/* TESTO → deve stare sotto su mobile */}
+        <div className="w-full md:w-1/2 flex items-center justify-center px-6 md:px-12 py-12 order-2 md:order-1">
+
+          <div className="max-w-lg text-center md:text-left">
+
+            <h2 className="text-3xl md:text-5xl font-semibold mb-6">
+              Chi sono
+            </h2>
+
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+          </div>
+
+        </div>
+
+        {/* IMMAGINE → deve stare sopra su mobile */}
+        <div className="w-full md:w-1/2 order-1 md:order-2">
+
+          <img
+            src="/Colline.jpg"
+            alt="Studio"
+            className="w-full h-64 md:h-full object-cover"
+          />
+
+        </div>
+
+      </section>
+      {/* SEZIONE MOTIVAZIONALE 2 */ }
+      <section className="w-full py-32">
+
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          
+          <img
+            src="/Colline.jpg"
+            alt="Icona sezione"
+            className="w-32 h-64 mx-auto mb-6 object-contain"
+          />
+
+          <h2 className="text-5xl font-semibold mb-6">
+            Inizia il tuo percorso
+          </h2>
+
+          <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto mb-10">
+            Se stai attraversando un momento di difficoltà o senti il bisogno
+            di uno spazio di ascolto, puoi contattarmi per un primo colloquio.
+          </p>
+
+          <a
+            href="#contatti"
+            className="inline-block bg-black text-white px-8 py-4 rounded-full"
+          >
+            Prenota un colloquio
+          </a>
+
+        </div>
+
+      </section>
+      {/* SEZIONE MOTIVAZIONALE 3 */ }
+      <section className="w-full py-32 bg-gray-200">
+
+        <div className="max-w-4xl mx-auto px-6 text-center">
+
+          <h2 className="text-5xl font-semibold mb-6">
+            Inizia il tuo percorso
+          </h2>
+
+          <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto mb-10">
+            Se stai attraversando un momento di difficoltà o senti il bisogno
+            di uno spazio di ascolto, puoi contattarmi per un primo colloquio.
+          </p>
+
+          <a
+            href="#contatti"
+            className="inline-block bg-black text-white px-8 py-4 rounded-full"
+          >
+            Prenota un colloquio
+          </a>
+
+        </div>
+
+      </section>
+      {/* CONTATTI */}
+      <section id="contatti" className="w-full py-16">
+
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+
+          {/* COLONNA SINISTRA - CONTATTI */}
+          <div className="flex flex-col justify-center">
+
+            <h2 className="text-4xl font-semibold mb-8">
+              Contatti
+            </h2>
+
+            <div className="space-y-3 text-gray-700 mb-8">
+              <p><strong>Email:</strong> nome@email.com</p>
+              <p><strong>Telefono:</strong> +39 XXX XXX XXXX</p>
+              <p><strong>Studio:</strong> Mascali, Italia</p>
+            </div>
+
+            <a
+              href="mailto:nome@email.com"
+              className="inline-block w-fit bg-gray-900 text-white px-6 py-3 rounded-full text-sm hover:bg-gray-800 transition mb-6"
+            >
+              Scrivimi una email
+            </a>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/39XXXXXXXXXX"
+              target="_blank"
+              className="inline-block w-fit bg-green-500 text-white px-5 py-3 rounded-full shadow-lg text-sm hover:bg-green-600 transition"
+            >
+              WhatsApp
+            </a>
+
+          </div>
+
+          {/* COLONNA DESTRA - MAPPA */}
+          <div className="w-full h-full">
+
+            <iframe
+              className="w-full h-125 rounded-2xl"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1283.3433516893986!2d15.182671508170252!3d37.72645809349529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1314065d630b2575%3A0x420eb723e72dae50!2sCinema%20Eden!5e1!3m2!1sit!2sit!4v1780064742581!5m2!1sit!2sit"
+              loading="lazy"
+            />
+
+          </div>
+
+        </div>
+
       </section>
 
       {/* FOOTER */}
-      <footer className="text-sm text-gray-500 border-t pt-6">
+      <footer className="w-full py-12 border-t text-center text-sm text-gray-500">
         © {new Date().getFullYear()} Dott. Nome Cognome — Psicologo
       </footer>
     </main>
