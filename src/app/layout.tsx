@@ -1,14 +1,14 @@
 import "./globals.css"
-import { Montserrat, Elms_Sans } from "next/font/google"
+import { Merriweather, Elms_Sans } from "next/font/google"
 
 const elmsSans = Elms_Sans({
   subsets: ["latin"],
   variable: "--font-elms",
 });
 
-const montserrat = Montserrat({
+const merriweather = Merriweather({
   subsets: ["latin"],
-  variable: "--font-montserrat",
+  variable: "--font-merriweather",
 });
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="it">
-      <body className={`${montserrat.variable} ${elmsSans.variable}`}>
+      <body className={`${merriweather.variable} ${elmsSans.variable}`}>
         {children}
       </body>
     </html>

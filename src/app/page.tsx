@@ -14,7 +14,7 @@ export default function Home() {
       <section className="flex flex-col md:flex-row items-center justify-center text-center md:text-left min-h-screen px-6 md:px-12">
 
         {/* IMMAGINE */}
-        <div className="flex  justify-center mb-10 md:mb-0 md:pr-24 md:max-h-[50vh] md:max-w-[38vh]">
+        <div className="flex justify-center mb-10 max-w-[20vh] md:mb-0 md:pr-24 md:max-h-[60vh] md:max-w-[45vh]">
           <img
             src="/Montagna.jpg"
             alt="Studio psicologo"
@@ -26,7 +26,7 @@ export default function Home() {
         <div className="max-w-4xl md:pl-24 flex flex-col items-center md:items-start">
 
           <h1 className="text-4xl md:text-7xl font-semibold tracking-tight mb-6">
-            Psicologo a Palermo
+            Uno spazio per ascoltare ciò che stai vivendo.
           </h1>
 
           <p className="leading-relaxed mb-8 max-w-2xl">
@@ -38,14 +38,14 @@ export default function Home() {
             href="#contatti"
             className="
               inline-block
-              border border-[#101911]
+              border border-carbon-black
               px-6 py-3
               rounded-sm
               transition-all
               duration-600
               ease-in-out
-              hover:bg-[#101911]
-              hover:text-[#F4EEFC]
+              hover:bg-carbon-black
+              hover:text-lavender-mist
               active:scale-95
             "
           >
@@ -57,7 +57,7 @@ export default function Home() {
       </section>
 
       {/* CHI SONO */}
-      <section className="flex flex-col md:flex-row bg-[#A4C2A8]">
+      <section className="flex flex-col md:flex-row bg-muted-teal-light">
 
         {/* TESTO → deve stare sotto su mobile */}
         <div className="w-full md:w-1/2 flex items-center justify-center px-6 md:px-12 py-12 order-2 md:order-1">
@@ -65,11 +65,11 @@ export default function Home() {
           <div className="max-w-lg text-center md:text-left">
 
             <h2 className="text-3xl md:text-6xl font-semibold mb-6">
-              Chi sono
+              Ultimamente tutto sembra supecchiu.
             </h2>
 
             <p className="leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Stai andando avanti, tenendo insieme lavoro, casa, relazioni — ma sotto la superficie ti senti stanco, tirato in più direzioni, e fai fatica a capire di cosa hai davvero bisogno.<br />Non sei solo, e sei nel posto giusto.<br />Un percorso psicologico può aiutarti a ritrovare un senso di equilibrio, a rimettere a fuoco te stesso e a dare spazio anche a ciò che spesso metti da parte.<br /><strong>Menza Parola</strong>
             </p>
 
           </div>
@@ -80,7 +80,7 @@ export default function Home() {
         <div className="w-full md:w-1/2 order-1 md:order-2">
 
           <img
-            src="/Colline.jpg"
+            src="/Donna_spalle.jpg"
             alt="Studio"
             className="w-full h-64 md:h-full object-cover"
           />
@@ -90,55 +90,34 @@ export default function Home() {
       </section>
 
       {/* SERVIZI */}
-      <section className="flex flex-col md:flex-row">
+      <section className="flex flex-col md:flex-row min-h-screen">
 
-        {/* IMMAGINE */}
-        <div className="w-full md:w-1/2 flex items-center justify-center p-6 md:p-12 order-1 md:order-1">
+        {/* COLONNA SINISTRA - IMMAGINE */}
+        <div className="w-full md:w-1/2 flex items-center justify-center p-12">
 
           <img
-            src="/Colline.jpg"
+            src="/Uomo_fronte.jpg"
             alt="Approccio terapeutico"
-            className="w-full max-w-sm md:max-w-md rounded-2xl object-cover"
+            className="rounded-t-full rounded-b-none w-full max-w-sm md:max-w-md object-cover"
           />
 
         </div>
 
-        {/* TESTO */}
-        <div className="w-full md:w-1/2 flex items-center justify-center px-6 md:px-12 py-12 md:py-16 order-2 md:order-2">
+        {/* COLONNA DESTRA - TESTO */}
+        <div className="w-full md:w-1/2 flex items-center justify-center p-12">
 
-          <div className="max-w-lg flex flex-col text-center md:text-left">
+          <div className="max-w-lg text-center md:text-left">
 
             <h2 className="text-3xl md:text-5xl font-semibold mb-6">
               Un percorso costruito insieme
             </h2>
 
-            <p className="leading-relaxed mb-8">
+            <p className="leading-relaxed">
               Ogni persona porta con sé una storia unica. Lo spazio terapeutico
               offre un'occasione per comprendere meglio le proprie difficoltà,
               valorizzare le proprie risorse e individuare nuove modalità per
               affrontare le sfide quotidiane.
             </p>
-
-            {/* CTA centrata solo su mobile */}
-            <div className="flex justify-center md:justify-start">
-              <a
-                href="#contatti"
-                className="
-                  inline-block
-                  border border-[#101911]
-                  px-6 py-3
-                  rounded-sm
-                  transition-all
-                  duration-600
-                  ease-in-out
-                  hover:bg-[#101911]
-                  hover:text-[#F4EEFC]
-                  active:scale-95
-                "
-              >
-                Contattami
-              </a>
-            </div>
 
           </div>
 
@@ -146,7 +125,7 @@ export default function Home() {
 
       </section>
       {/*SEZIONE MOTIVAZIONALE*/ }
-      <section className="flex flex-col md:flex-row bg-[#A4C2A8]">
+      <section className="flex flex-col md:flex-row bg-tangerine-dream-light">
 
         {/* TESTO → deve stare sotto su mobile */}
         <div className="w-full md:w-1/2 flex items-center justify-center px-6 md:px-12 py-12 order-2 md:order-1">
@@ -201,14 +180,14 @@ export default function Home() {
             href="#contatti"
             className="
               inline-block
-              border border-[#101911]
+              border border-carbon-black
               px-8 py-4
               rounded-sm
               transition-all
               duration-600
               ease-in-out
-              hover:bg-[#101911]
-              hover:text-[#F4EEFC]
+              hover:bg-carbon-black
+              hover:text-lavender-mist
               active:scale-95
             "
           >
@@ -236,14 +215,14 @@ export default function Home() {
             href="#contatti"
             className="
               inline-block
-              border border-[#101911]
+              border border-carbon-black
               px-8 py-4
               rounded-sm
               transition-all
               duration-600
               ease-in-out
-              hover:bg-[#101911]
-              hover:text-[#F4EEFC]
+              hover:bg-carbon-black
+              hover:text-lavender-mist
               active:scale-95
             "
           >
@@ -276,14 +255,14 @@ export default function Home() {
               className="
                   inline-block
                   w-fit
-                  border border-[#101911]
+                  border border-carbon-black
                   px-6 py-3
                   rounded-sm
                   transition-all
                   duration-600
                   ease-in-out
-                  hover:bg-[#101911]
-                  hover:text-[#F4EEFC]
+                  hover:bg-carbon-black
+                  hover:text-lavender-mist
                   active:scale-95
                 "
             >
@@ -297,14 +276,14 @@ export default function Home() {
               className="
                   inline-block
                   w-fit
-                  border border-[#101911]
+                  border border-carbon-black
                   px-6 py-3
                   rounded-sm
                   transition-all
                   duration-600
                   ease-in-out
                   hover:bg-green-600
-                  hover:text-[#F4EEFC]
+                  hover:text-lavender-mist
                   active:scale-95
                 "
             >

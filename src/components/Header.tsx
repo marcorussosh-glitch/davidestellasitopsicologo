@@ -6,7 +6,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="px-6 md:px-12 py-6 flex items-center justify-between">
+    <header className="sticky top-0 z-10 bg-[#F4EEFC] px-6 md:px-12 py-6 flex items-center justify-between">
       
       <div className="font-semibold text-xl">
         Dott. Davide Stella

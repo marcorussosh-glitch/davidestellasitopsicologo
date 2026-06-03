@@ -5,8 +5,6 @@
   --foreground: #171717;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,19 +14,28 @@
   }
 }
 
+@theme {
+  --color-carbon-black: #101911;
+  --color-lavender-mist: #F4EEFC;
+  --color-muted-teal-light: #e0ebe2;
+  --color-muted-teal-medium: #a3c2a7;
+  --color-tangerine-dream: #fbb89d;
+  --color-tangerine-dream-light: #fddbce;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-elms);
-  background: #F4EEFC;
-  color: #101911;
+  background: var(--color-lavender-mist);
+  color: var(--color-carbon-black);
 }
 
-h1, h2, h3, h4, h5, h6,
-button, a {
-  font-family: var(--font-montserrat);
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-merriweather);
+  line-height: 1.4;
 }
 
 p {
@@ -44,7 +51,6 @@ p {
     font-size: 1.25rem;
   }
 }
-
 
 
 
