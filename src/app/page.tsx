@@ -125,7 +125,7 @@ export default function Home() {
 
       </section>
       {/*SEZIONE MOTIVAZIONALE*/ }
-      <section className="flex flex-col md:flex-row bg-tangerine-dream-light">
+      <section className="flex flex-col md:flex-row bg-tangerine-dream-dark text-lavender-mist">
 
         {/* TESTO → deve stare sotto su mobile */}
         <div className="w-full md:w-1/2 flex items-center justify-center px-6 md:px-12 py-12 order-2 md:order-1">
@@ -133,12 +133,25 @@ export default function Home() {
           <div className="max-w-lg text-center md:text-left">
 
             <h2 className="text-3xl md:text-5xl font-semibold mb-6">
-              Chi sono
+              Supporto che ti incontra esattamente dove sei.
             </h2>
 
             <p className="leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Nel mio lavoro accompagno persone in diverse fasi della vita adulta — dai cambiamenti legati alla genitorialità alle transizioni più profonde dell’età matura.
             </p>
+
+            <p className="md:py-5 leading-relaxed font-semibold">
+              Mi occupo in particolare di:
+            </p>
+
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Ansia e sovraccarico emotivo</li>
+              <li>Difficoltà relazionali e comunicative</li>
+              <li>Stress legato a genitorialità e caregiving</li>
+              <li>Cambiamenti e crisi d’identità</li>
+              <li>Burnout e stanchezza cronica</li>
+              <li>Difficoltà nel porre confini e nel riconoscere il proprio valore</li>
+            </ul>
 
           </div>
 
@@ -148,7 +161,7 @@ export default function Home() {
         <div className="w-full md:w-1/2 order-1 md:order-2">
 
           <img
-            src="/Colline.jpg"
+            src="/Donna_closeup.jpg"
             alt="Studio"
             className="w-full h-64 md:h-full object-cover"
           />
