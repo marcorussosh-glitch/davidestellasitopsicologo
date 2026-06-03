@@ -21,14 +21,31 @@ html {
 }
 
 body {
-  background: #ffffff;
-  color: #1a1a1a;
+  font-family: var(--font-elms);
+  background: #F4EEFC;
+  color: #101911;
+}
+
+h1, h2, h3, h4, h5, h6,
+button, a {
+  font-family: var(--font-montserrat);
 }
 
 p {
   letter-spacing: 0.2px;
+  font-size: 1.0rem;
 }
 
-a {
-  transition: all 0.2s ease;
+@media (min-width: 768px) {
+  p {
+    font-size: 1.25rem;
+  }
+  a {
+    font-size: 1.25rem;
+  }
 }
+
+
+
+
+

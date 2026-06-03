@@ -8,18 +8,18 @@ export default function Header() {
   return (
     <header className="px-6 md:px-12 py-6 flex items-center justify-between">
       
-      <div className="font-semibold">
-        Dott. Nome Cognome
+      <div className="font-semibold text-xl">
+        Dott. Davide Stella
       </div>
 
-      <nav className="hidden md:flex space-x-6 text-sm text-gray-600">
+      <nav className="hidden md:flex space-x-6">
         <a href="#chi-sono">Chi sono</a>
         <a href="#servizi">Servizi</a>
         <a href="#contatti">Contatti</a>
       </nav>
 
       <button
-        className="md:hidden text-2xl"
+        className="md:hidden"
         onClick={() => setOpen(!open)}
       >
         ☰
