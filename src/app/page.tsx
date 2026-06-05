@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
-  
+import ContactForm from "../components/ContactForm";
+
 export const metadata = {
   title: "Psicologo a Mascali | Dott. Nome Cognome",
   description:
@@ -26,16 +27,15 @@ export default function Home() {
         <div className="max-w-4xl md:pl-24 flex flex-col items-center md:items-start">
 
           <h1 className="text-4xl md:text-7xl font-semibold tracking-tight mb-6">
-            Uno spazio per ascoltare ciò che stai vivendo.
+            "Fa' che il tuo viaggio non sia la bugia di una meta, ma la verità della strada"
           </h1>
 
           <p className="leading-relaxed mb-8 max-w-2xl">
-            Supporto psicologico per ansia, stress e difficoltà personali.
-            Uno spazio di ascolto e lavoro concreto sul benessere psicologico.
+            Ognuno di noi ha le risorse per comprendere se stesso e cambiare la propria vita.
           </p>
 
           <a
-            href="#contatti"
+            href="https://www.guidapsicologi.it/studio/dott-davide-stella"
             className="
               inline-block
               border border-carbon-black
@@ -48,6 +48,8 @@ export default function Home() {
               hover:text-lavender-mist
               active:scale-95
             "
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Prenota un colloquio
           </a>
@@ -56,7 +58,7 @@ export default function Home() {
 
       </section>
 
-      {/* CHI SONO */}
+      {/* MOTIVAZIONALE */}
       <section className="flex flex-col md:flex-row bg-muted-teal-light">
 
         {/* TESTO → deve stare sotto su mobile */}
@@ -89,8 +91,8 @@ export default function Home() {
 
       </section>
 
-      {/* SERVIZI */}
-      <section className="flex flex-col md:flex-row min-h-screen">
+      {/* CHI SONO */}
+      <section className="flex flex-col md:flex-row min-h-screen" id="chi-sono">
 
         {/* COLONNA SINISTRA - IMMAGINE */}
         <div className="w-full md:w-1/2 flex items-center justify-center p-12">
@@ -109,14 +111,12 @@ export default function Home() {
           <div className="max-w-lg text-center md:text-left">
 
             <h2 className="text-3xl md:text-5xl font-semibold mb-6">
-              Un percorso costruito insieme
+              Presentazione Un percorso costruito insieme
             </h2>
 
             <p className="leading-relaxed">
-              Ogni persona porta con sé una storia unica. Lo spazio terapeutico
-              offre un'occasione per comprendere meglio le proprie difficoltà,
-              valorizzare le proprie risorse e individuare nuove modalità per
-              affrontare le sfide quotidiane.
+              Sto completando la mia specializzazione in Analisi Transazionale, un modello terapeutico che mette al centro la persona, la sua autonomia e la sua capacità di scelta.
+              Credo fortemente in una psicologia dal linguaggio chiaro, dove terapeuta e paziente lavorano insieme, allo stesso livello, per il raggiungimento degli obiettivi concordati.
             </p>
 
           </div>
@@ -124,8 +124,8 @@ export default function Home() {
         </div>
 
       </section>
-      {/*SEZIONE MOTIVAZIONALE*/ }
-      <section className="flex flex-col md:flex-row bg-tangerine-dream-dark text-lavender-mist">
+      {/*SERVIZI*/ }
+      <section className="flex flex-col md:flex-row bg-tangerine-dream-dark text-lavender-mist" id="servizi">
 
         {/* TESTO → deve stare sotto su mobile */}
         <div className="w-full md:w-1/2 flex items-center justify-center px-6 md:px-12 py-12 order-2 md:order-1">
@@ -137,7 +137,7 @@ export default function Home() {
             </h2>
 
             <p className="leading-relaxed">
-              Nel mio lavoro accompagno persone in diverse fasi della vita adulta — dai cambiamenti legati alla genitorialità alle transizioni più profonde dell’età matura.
+              Il mio obiettivo primario è offrirti uno spazio sicuro dove esplorare le tue emozioni e i tuoi pensieri, senza il timore del giudizio e con l'entusiasmo di costruire una nuova consapevolezza.
             </p>
 
             <p className="md:py-5 leading-relaxed font-semibold">
@@ -175,12 +175,12 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           
           <img
-            src="/Colline.jpg"
+            src="/Mani.jpg"
             alt="Icona sezione"
-            className="w-32 h-64 mx-auto mb-6 object-contain"
+            className="rounded-t-full rounded-b-none max-h-70 mx-auto mb-6 object-contain"
           />
 
-          <h2 className="text-5xl font-semibold mb-6">
+          <h2 className="text-5xl font-semibold mb-6 mt-12">
             Inizia il tuo percorso
           </h2>
 
@@ -204,43 +204,41 @@ export default function Home() {
               active:scale-95
             "
           >
-            Prenota un colloquio
+            Contattami
           </a>
 
         </div>
 
       </section>
       {/* SEZIONE MOTIVAZIONALE 3 */ }
-      <section className="w-full py-32 bg-[#A4C2A8]">
+      <section id="studio" className="w-full py-16 bg-muted-teal-medium">
 
-        <div className="max-w-4xl mx-auto px-6 text-center">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
 
-          <h2 className="text-5xl font-semibold mb-6">
-            Inizia il tuo percorso
-          </h2>
+          {/* COLONNA SINISTRA - CONTATTI */}
+          <div className="flex flex-col justify-center">
 
-          <p className="leading-relaxed max-w-2xl mx-auto mb-10">
-            Se stai attraversando un momento di difficoltà o senti il bisogno
-            di uno spazio di ascolto, puoi contattarmi per un primo colloquio.
-          </p>
+            <h2 className="text-5xl font-semibold mb-8">
+              Il mio studio
+            </h2>
+            <p className="mb-12">Via Siculo Orientale 9 Mascali (CT)</p>
+            <div className="space-y-3 mb-8">
+              <h3 className="text-xl font-semibold">Orari di ricevimento:</h3>
+              <p>Lunedì - Venerdì</p>
+              <p>9:00 - 18:00</p>
+            </div>
+          </div>
 
-          <a
-            href="#contatti"
-            className="
-              inline-block
-              border border-carbon-black
-              px-8 py-4
-              rounded-sm
-              transition-all
-              duration-600
-              ease-in-out
-              hover:bg-carbon-black
-              hover:text-lavender-mist
-              active:scale-95
-            "
-          >
-            Prenota un colloquio
-          </a>
+          {/* COLONNA DESTRA - MAPPA */}
+          <div className="w-full h-full">
+
+            <iframe
+              className="w-full h-100 rounded-2xl"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1283.3433516893986!2d15.182671508170252!3d37.72645809349529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1314065d630b2575%3A0x420eb723e72dae50!2sCinema%20Eden!5e1!3m2!1sit!2sit!4v1780064742581!5m2!1sit!2sit"
+              loading="lazy"
+            />
+
+          </div>
 
         </div>
 
@@ -253,38 +251,18 @@ export default function Home() {
           {/* COLONNA SINISTRA - CONTATTI */}
           <div className="flex flex-col justify-center">
 
-            <h2 className="text-4xl font-semibold mb-8">
+            <h2 className="text-5xl font-semibold mb-8">
               Contatti
             </h2>
 
             <div className="space-y-3 mb-8">
-              <p><strong>Email:</strong> nome@email.com</p>
-              <p><strong>Telefono:</strong> +39 XXX XXX XXXX</p>
-              <p><strong>Studio:</strong> Mascali, Italia</p>
+              <p><strong>Email:</strong> stella.davide.psi@gmail.com</p>
+              <p><strong>Telefono:</strong> +39 353 4021876</p>
             </div>
-
-            <a
-              href="mailto:nome@email.com"
-              className="
-                  inline-block
-                  w-fit
-                  border border-carbon-black
-                  px-6 py-3
-                  rounded-sm
-                  transition-all
-                  duration-600
-                  ease-in-out
-                  hover:bg-carbon-black
-                  hover:text-lavender-mist
-                  active:scale-95
-                "
-            >
-              Scrivimi una email
-            </a>
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/39XXXXXXXXXX"
+              href="https://wa.me/3534021876"
               target="_blank"
               className="
                   inline-block
@@ -306,7 +284,8 @@ export default function Home() {
           </div>
 
           {/* COLONNA DESTRA - MAPPA */}
-          <div className="w-full h-full">
+          <ContactForm />
+          {/*<div className="w-full h-full">
 
             <iframe
               className="w-full h-125 rounded-2xl"
@@ -314,15 +293,14 @@ export default function Home() {
               loading="lazy"
             />
 
-          </div>
+          </div>*/}
 
         </div>
 
       </section>
-
       {/* FOOTER */}
       <footer className="w-full py-12 border-t text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Dott. Nome Cognome — Psicologo
+        © {new Date().getFullYear()} Dott. Davide Stella — Psicologo Clinico
       </footer>
     </main>
   );
