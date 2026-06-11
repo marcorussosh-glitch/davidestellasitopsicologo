@@ -86,7 +86,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 order-1 md:order-2">
 
             <img
-              src="/Lato_Quadro.jpg"
+              src="/Lato_quadro.jpg"
               alt="Studio"
               className="w-full h-64 md:h-full object-cover"
             />
