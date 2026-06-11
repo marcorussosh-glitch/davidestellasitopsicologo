@@ -3,9 +3,9 @@ import ContactForm from "../components/ContactForm";
 import SectionReveal from "@/components/SectionReveal";
 
 export const metadata = {
-  title: "Psicologo a Mascali | Dott. Nome Cognome",
+  title: "Psicologo Davide Stella",
   description:
-    "Supporto psicologico a Mascali per ansia, stress e difficoltà personali. Colloqui in presenza e online.",
+    "Prenota ora il tuo primo colloquio gratuito - Disponibile a Mascali(CT) e online. Consulenza e sostegno psicologico per bambini, adolescenti e adulti nella gestione di ansia, stress e difficoltà relazionali.",
 }
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
           {/* IMMAGINE */}
           <div className="flex justify-center mb-10 max-w-[20vh] md:mb-0 md:pr-24 md:max-h-[60vh] md:max-w-[45vh]">
             <img
-              src="/Montagna.jpg"
+              src="/Poltrona_Sorriso.jpg"
               alt="Studio psicologo"
               className="rounded-t-full rounded-b-none w-full max-w-sm md:max-w-md object-cover"
             />
@@ -70,12 +70,12 @@ export default function Home() {
 
             <div className="max-w-lg text-center md:text-left">
 
-              <h2 className="text-3xl md:text-6xl font-semibold mb-6">
+              {/*<h2 className="text-3xl md:text-6xl font-semibold mb-6">
                 Ultimamente tutto sembra supecchiu.
-              </h2>
+              </h2>*/}
 
               <p className="leading-relaxed">
-                Stai andando avanti, tenendo insieme lavoro, casa, relazioni — ma sotto la superficie ti senti stanco, tirato in più direzioni, e fai fatica a capire di cosa hai davvero bisogno.<br />Non sei solo, e sei nel posto giusto.<br />Un percorso psicologico può aiutarti a ritrovare un senso di equilibrio, a rimettere a fuoco te stesso e a dare spazio anche a ciò che spesso metti da parte.<br /><strong>Menza Parola</strong>
+                Il mio obiettivo primario è offrirti uno spazio sicuro dove esplorare le tue emozioni e i tuoi pensieri, senza il timore del giudizio e con l'entusiasmo di costruire una nuova consapevolezza.
               </p>
 
             </div>
@@ -86,7 +86,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 order-1 md:order-2">
 
             <img
-              src="/Donna_spalle.jpg"
+              src="/Lato_Quadro.jpg"
               alt="Studio"
               className="w-full h-64 md:h-full object-cover"
             />
@@ -104,7 +104,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 flex items-center justify-center p-12">
 
             <img
-              src="/Uomo_fronte.jpg"
+              src="/Inpiedi.jpg"
               alt="Approccio terapeutico"
               className="rounded-t-full rounded-b-none w-full max-w-sm md:max-w-md object-cover"
             />
@@ -117,7 +117,7 @@ export default function Home() {
             <div className="max-w-lg text-center md:text-left">
 
               <h2 className="text-3xl md:text-5xl font-semibold mb-6">
-                Presentazione Un percorso costruito insieme
+                Ciao, sono il Dott. Davide Stella, psicologo clinico a Mascali (CT).
               </h2>
 
               <p className="leading-relaxed">
@@ -145,7 +145,7 @@ export default function Home() {
               </h2>
 
               <p className="leading-relaxed">
-                Il mio obiettivo primario è offrirti uno spazio sicuro dove esplorare le tue emozioni e i tuoi pensieri, senza il timore del giudizio e con l'entusiasmo di costruire una nuova consapevolezza.
+                Offro percorsi di consulenza e sostegno psicologico rivolti a bambini, adolescenti e adulti. Disponibile sia in presenza che online, a seconda delle esigenze di ognuno.
               </p>
 
               <p className="md:py-5 leading-relaxed font-semibold">
@@ -153,12 +153,10 @@ export default function Home() {
               </p>
 
               <ul className="list-disc pl-5 space-y-1">
-                <li>Ansia e sovraccarico emotivo</li>
-                <li>Difficoltà relazionali e comunicative</li>
-                <li>Stress legato a genitorialità e caregiving</li>
-                <li>Cambiamenti e crisi d’identità</li>
-                <li>Burnout e stanchezza cronica</li>
-                <li>Difficoltà nel porre confini e nel riconoscere il proprio valore</li>
+                <li><strong>Difficoltà relazionali:</strong> migliorare la comunicazione e comprendere i conflitti con partner, familiari o colleghi.</li>
+                <li><strong>Gestione delle emozioni:</strong> affrontare momenti di forte stress, ansia leggera, insicurezza o blocchi decisionali.</li>
+                <li><strong>Fasi di transizione:</strong> sostenere la persona durante cambiamenti di vita (cambio scuola/lavoro, separazioni, crescita dei figli).</li>
+                <li><strong>Autostima e consapevolezza:</strong> riconoscere i propri schemi ripetitivi e riscoprire le proprie risorse personali.</li>
               </ul>
 
             </div>
@@ -169,7 +167,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 order-1 md:order-2">
 
             <img
-              src="/Donna_closeup.jpg"
+              src="/Lato_Armadio.jpg"
               alt="Studio"
               className="w-full h-64 md:h-full object-cover"
             />
@@ -185,18 +183,18 @@ export default function Home() {
           <div className="max-w-4xl mx-auto px-6 text-center">
             
             <img
-              src="/Mani.jpg"
+              src="/Poltrona_Serio.jpg"
               alt="Icona sezione"
               className="rounded-t-full rounded-b-none max-h-70 mx-auto mb-6 object-contain"
             />
 
             <h2 className="text-5xl font-semibold mb-6 mt-12">
-              Inizia il tuo percorso
+              Inizia ora il tuo percorso!
             </h2>
 
             <p className="leading-relaxed max-w-2xl mx-auto mb-10">
               Se stai attraversando un momento di difficoltà o senti il bisogno
-              di uno spazio di ascolto, puoi contattarmi per un primo colloquio.
+              di uno spazio di ascolto, puoi contattarmi per un primo colloquio conoscitivo gratuito.
             </p>
 
             <a
@@ -237,7 +235,8 @@ export default function Home() {
               <div className="space-y-3 mb-8">
                 <h3 className="text-xl font-semibold">Orari di ricevimento:</h3>
                 <p>Lunedì - Venerdì</p>
-                <p>9:00 - 18:00</p>
+                <p>9:30 - 13:00</p>
+                <p>15:00 - 18:00</p>
               </div>
             </div>
 
@@ -246,7 +245,7 @@ export default function Home() {
 
               <iframe
                 className="w-full h-100 rounded-2xl"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1283.3433516893986!2d15.182671508170252!3d37.72645809349529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1314065d630b2575%3A0x420eb723e72dae50!2sCinema%20Eden!5e1!3m2!1sit!2sit!4v1780064742581!5m2!1sit!2sit"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73148.30124006855!2d15.149743580618248!3d37.75150184466673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x28fa189e9bec4469%3A0x76fe20e38dc51695!2sPsicologo%20Davide%20Stella!5e1!3m2!1sit!2sit!4v1781172594234!5m2!1sit!2sit"
                 loading="lazy"
               />
 
@@ -298,7 +297,7 @@ export default function Home() {
             </div>
 
             {/* COLONNA DESTRA - MAPPA */}
-            <ContactForm />
+            {/*<ContactForm />*/}
             {/*<div className="w-full h-full">
 
               <iframe
