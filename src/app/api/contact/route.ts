@@ -8,7 +8,7 @@ export async function POST(request: Request) {
 
     const { error } = await resend.emails.send({
       from: "Sito Davide <onboarding@resend.dev>",
-      to: ["marco.russo.sh@gmail.com"],
+      to: ["stella.davide.psi@gmail.com"],
       subject: `Nuovo messaggio da ${nome} ${cognome}`,
       replyTo: email,
       text: `
@@ -22,6 +22,7 @@ ${messaggio}
     });
 
     if (error) {
+      console.log("Errore nell'invio dell'email:", error);
       return Response.json({ error }, { status: 500 });
     }
 

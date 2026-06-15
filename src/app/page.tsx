@@ -14,10 +14,10 @@ export default function Home() {
       <Header />
       {/* HERO */}
       <SectionReveal>
-        <section className="flex flex-col md:flex-row items-center justify-center text-center md:text-left min-h-screen px-6 md:px-12">
+        <section className="flex flex-col md:flex-row items-center justify-center text-center md:text-left min-h-[95vh] px-6 md:px-12">
 
           {/* IMMAGINE */}
-          <div className="flex justify-center mb-10 max-w-[20vh] md:mb-0 md:pr-24 md:max-h-[60vh] md:max-w-[45vh]">
+          <div className="flex justify-center mb-10 max-w-[30vh] md:mb-0 md:pr-24 md:max-h-[80vh] md:max-w-[75vh]">
             <img
               src="/Poltrona_Sorriso.jpg"
               alt="Studio psicologo"
@@ -101,12 +101,12 @@ export default function Home() {
         <section className="flex flex-col md:flex-row min-h-screen" id="chi-sono">
 
           {/* COLONNA SINISTRA - IMMAGINE */}
-          <div className="w-full md:w-1/2 flex items-center justify-center p-12">
+          <div className="w-full md:w-1/2 flex items-center justify-center pt-12 px-12 pb-0 md:p-12">
 
             <img
               src="/Inpiedi.jpg"
               alt="Approccio terapeutico"
-              className="rounded-t-full rounded-b-none w-full max-w-sm md:max-w-md object-cover"
+              className="rounded-t-full rounded-b-none w-full max-w-[30vh] md:max-w-md object-cover"
             />
 
           </div>
@@ -148,15 +148,15 @@ export default function Home() {
                 Offro percorsi di consulenza e sostegno psicologico rivolti a bambini, adolescenti e adulti. Disponibile sia in presenza che online, a seconda delle esigenze di ognuno.
               </p>
 
-              <p className="md:py-5 leading-relaxed font-semibold">
+              <h2 className="text-xl py-5 md:py-5 leading-relaxed font-semibold md:text-2xl">
                 Mi occupo in particolare di:
-              </p>
+              </h2>
 
               <ul className="list-disc pl-5 space-y-1">
-                <li><strong>Difficoltà relazionali:</strong> migliorare la comunicazione e comprendere i conflitti con partner, familiari o colleghi.</li>
-                <li><strong>Gestione delle emozioni:</strong> affrontare momenti di forte stress, ansia leggera, insicurezza o blocchi decisionali.</li>
-                <li><strong>Fasi di transizione:</strong> sostenere la persona durante cambiamenti di vita (cambio scuola/lavoro, separazioni, crescita dei figli).</li>
-                <li><strong>Autostima e consapevolezza:</strong> riconoscere i propri schemi ripetitivi e riscoprire le proprie risorse personali.</li>
+                <li className="py-2"><strong>Difficoltà relazionali:</strong> migliorare la comunicazione e comprendere i conflitti con partner, familiari o colleghi.</li>
+                <li className="py-2"><strong>Gestione delle emozioni:</strong> affrontare momenti di forte stress, ansia leggera, insicurezza o blocchi decisionali.</li>
+                <li className="py-2"><strong>Fasi di transizione:</strong> sostenere la persona durante cambiamenti di vita (cambio scuola/lavoro, separazioni, crescita dei figli).</li>
+                <li className="py-2"><strong>Autostima e consapevolezza:</strong> riconoscere i propri schemi ripetitivi e riscoprire le proprie risorse personali.</li>
               </ul>
 
             </div>
@@ -219,9 +219,9 @@ export default function Home() {
 
         </section>
       </SectionReveal>  
-      {/* SEZIONE MOTIVAZIONALE 3 */ }
+      {/* IL MIO STUDIO */ }
       <SectionReveal>
-        <section id="studio" className="w-full py-16 bg-muted-teal-medium">
+        <section id="studio" className="w-full py-16 bg-tangerine-dream-light">
 
           <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
 
@@ -231,7 +231,7 @@ export default function Home() {
               <h2 className="text-5xl font-semibold mb-8">
                 Il mio studio
               </h2>
-              <p className="mb-12">Via Siculo Orientale 9 Mascali (CT)</p>
+              <p className="mb-12">Via Siculo Orientale 9, Mascali (CT)</p>
               <div className="space-y-3 mb-8">
                 <h3 className="text-xl font-semibold">Orari di ricevimento:</h3>
                 <p>Lunedì - Venerdì</p>
