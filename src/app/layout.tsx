@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import CookieBanner from "@/components/CookieBanner";
 import "./globals.css"
 import { Merriweather, Elms_Sans } from "next/font/google"
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={`${merriweather.variable} ${elmsSans.variable}`}>
         <CookieBanner />
         {children}
+        <Analytics />
       </body>
     </html>
   )
