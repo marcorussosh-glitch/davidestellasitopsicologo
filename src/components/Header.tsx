@@ -9,7 +9,9 @@ export default function Header() {
     <header className="sticky top-0 z-10 bg-lavender-mist px-6 md:px-12 py-6 flex items-center justify-between">
       
       <div className="font-semibold text-xl">
-        Dott. Davide Stella
+        <a href="/">
+          Dott. Davide Stella
+        </a>  
       </div>
 
       <nav className="hidden md:flex space-x-6">

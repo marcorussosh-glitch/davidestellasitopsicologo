@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import ContactForm from "../components/ContactForm";
 import SectionReveal from "@/components/SectionReveal";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Psicologo Davide Stella",
@@ -313,9 +314,7 @@ export default function Home() {
         </section>
       </SectionReveal>  
       {/* FOOTER */}
-      <footer className="w-full py-12 border-t text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Dott. Davide Stella — Psicologo Clinico
-      </footer>
+      <Footer />
     </main>
   );
 }

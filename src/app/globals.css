@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "vanilla-cookieconsent/dist/cookieconsent.css";
 
 :root {
   --background: #ffffff;
@@ -16,7 +17,10 @@
 
 @theme {
   --color-carbon-black: #101911;
+  --color-carbon-black-light: #507c55;
+  --color-carbon-black-very-light: #e0ebe2;
   --color-lavender-mist: #F4EEFC;
+  --color-muted-teal-very-light: #f0f5f0;
   --color-muted-teal-light: #e0ebe2;
   --color-muted-teal-medium: #a3c2a7;
   --color-tangerine-dream-dark: #c43d08;
@@ -51,6 +55,246 @@ p {
   a {
     font-size: 1.25rem;
   }
+}
+
+.footer {
+  font-size: 1rem;
+}
+
+/* COOKIE BANNER */
+
+#cc-main {
+  --cc-bg: var(--color-lavender-mist);
+  --cc-text: var(--color-carbon-black);
+  --cc-btn-primary-bg: var(--color-carbon-black-light);
+  --cc-btn-primary-text: var(--color-lavender-mist);
+  --cc-btn-primary-hover-bg: var(--color-carbon-black);
+  --cc-btn-secondary-bg: var(--color-muted-teal-medium);
+  --cc-btn-secondary-text: var(--color-carbon-black);
+  --cc-border-radius: 18px;
+}
+
+
+#cc-main .cm {
+  max-width: 420px;
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.22);
+}
+
+
+#cc-main .cm__title {
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+}
+
+
+#cc-main .cm__desc {
+  font-family: "Elms Sans", sans-serif;
+  line-height: 1.6;
+}
+
+
+#cc-main .cm__btn,
+#cc-main .pm__btn {
+  border-radius: 6px;
+  font-family: "Elms Sans", sans-serif;
+  padding: 10px 20px;
+}
+
+
+#cc-main .cm__btn {
+  border-radius: 4px;
+  border: 1px solid var(--color-carbon-black);
+  transition: background-color 0.6s ease-in-out,
+              color 0.6s ease-in-out,
+              border-color 0.6s ease-in-out,
+              transform 0.6s ease-in-out !important;
+}
+
+#cc-main .cm__btn--primary {
+  background: var(--color-carbon-black);
+  color: var(--color-lavender-mist);
+}
+
+
+#cc-main .cm__btn--primary:hover {
+  background: var(--color-carbon-black);
+  border-color: var(--color-carbon-black);
+}
+
+/* Pulsanti secondari (Rifiuta e Preferenze) */
+#cc-main .cm__btn--secondary {
+  background: transparent;
+  color: var(--color-carbon-black);
+}
+
+#cc-main .cm__btn--secondary:hover {
+  background: var(--color-carbon-black-light);
+  color: var(--color-lavender-mist);
+}
+
+/* Preferences Modal */
+
+#cc-main .pm {
+  padding: 32px;
+  border-radius: 20px;
+  background: var(--color-lavender-mist);
+  color: var(--color-carbon-black);
+  box-shadow: 0 15px 40px rgba(0,0,0,.22);
+}
+
+#cc-main .pm__title {
+  font-family: "Merriweather", serif;
+  font-size: 1.8rem;
+}
+
+#cc-main .pm__section,
+#cc-main .pm__section-desc {
+  font-family: "Elms Sans", sans-serif;
+  line-height: 1.6;
+}
+
+#cc-main .pm__section-title-wrapper {
+  border: 1px solid rgba(42, 43, 46, .15);
+  border-radius: 8px;
+}
+
+#cc-main .pm__section--toggle, #cc-main .pm__section--toggle .pm__section-title{
+  background: transparent;
+}
+
+
+#cc-main .pm__section-desc-wrapper {
+  padding: 18px 20px;
+  border: 1px solid rgba(42, 43, 46, .15);
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+}
+
+#cc-main .pm__section-desc {
+  font-family: "Elms Sans", sans-serif;
+  color: var(--color-carbon-black);
+  line-height: 1.6;
+}
+
+#cc-main .pm__section-title {
+  font-family: "Elms Sans", sans-serif;
+  font-weight: 600;
+  color: var(--color-carbon-black);
+}
+
+#cc-main .toggle__icon {
+  background: var(--color-muted-teal-light);
+  border-radius: 999px;
+  box-shadow: none;
+}
+
+#cc-main .toggle__icon-circle {
+  background: var(--color-lavender-mist);
+}
+
+#cc-main .section__toggle:checked + .toggle__icon {
+  background: var(--color-carbon-black-light);
+}
+
+#cc-main .toggle__icon-on svg {
+  stroke: var(--color-carbon-black);
+}
+
+#cc-main .toggle__icon-off svg {
+  stroke: var(--color-carbon-black-light);
+}
+
+#cc-main .pm__section-arrow {
+  background: none!important;
+  border: 1px solid rgba(42, 43, 46, .15);
+}
+
+#cc-main .pm__section-arrow svg {
+  stroke: var(--color-carbon-black);
+  transition: transform .6s ease;
+}
+
+#cc-main .pm__btn {
+  border-radius: 4px;
+  border: 1px solid var(--color-carbon-black);
+
+  font-family: "Elms Sans", sans-serif;
+
+  transition:
+    background-color 0.6s ease-in-out,
+    color 0.6s ease-in-out,
+    border-color 0.6s ease-in-out,
+    transform 0.6s ease-in-out !important;
+}
+
+#cc-main .pm__btn[data-role="necessary"] {
+  background: transparent;
+  color: var(--color-carbon-black);
+}
+
+#cc-main .pm__btn[data-role="necessary"]:hover {
+  background: var(--color-carbon-black-light);
+  color: var(--color-lavender-mist);
+}
+
+#cc-main .pm__close-btn {
+  background: none;
+  border: 1px solid rgba(42, 43, 46, .15);
+  color: var(--color-carbon-black);
+}
+
+#cc-main .pm__close-btn:hover {
+  background: var(--color-muted-teal-light);
+  border: 1px solid var(--color-carbon-black);
+  transition: 
+    background-color 0.6s ease-in-out,
+    border-color 0.6s ease-in-out;
+}
+
+#cc-main .pm__btn--secondary {
+  background: transparent;
+  color: var(--color-carbon-black);
+}
+
+
+#cc-main .pm__btn--secondary:hover {
+  background: var(--color-carbon-black-light);
+  color: var(--color-lavender-mist);
+}
+
+#cc-main .pm__close-btn:hover {
+  opacity: .7;
+}
+
+#cc-main .pm__section:last-child {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(42, 43, 46, 0.15);
+}
+
+#cc-main .pm__section:last-child .pm__section-desc-wrapper {
+  border: none;
+  padding: 0;
+}
+
+#cc-main .pm__section:last-child:hover {
+  background: none;
+  border-top: 1px solid rgba(42, 43, 46, 0.15);
+}
+
+#cc-main .pm__section:last-child .pm__section-desc {
+  font-size: 0.9rem;
+  color: var(--color-carbon-black);
+}
+
+#cc-main .pm__section:last-child a {
+  color: var(--color-carbon-black);
+}
+
+#cc-main .pm__section:last-child a:hover {
+  opacity: 0.8;
 }
 
 /*"carbon-black": {

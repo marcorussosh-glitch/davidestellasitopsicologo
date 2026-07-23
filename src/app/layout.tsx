@@ -1,3 +1,4 @@
+import CookieBanner from "@/components/CookieBanner";
 import "./globals.css"
 import { Merriweather, Elms_Sans } from "next/font/google"
 
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="it">
       <body className={`${merriweather.variable} ${elmsSans.variable}`}>
+        <CookieBanner />
         {children}
       </body>
     </html>
