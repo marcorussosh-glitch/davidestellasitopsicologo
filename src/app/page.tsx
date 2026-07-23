@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import ContactForm from "../components/ContactForm";
 import SectionReveal from "@/components/SectionReveal";
 import Footer from "@/components/Footer";
+import GoogleMap from "@/components/GoogleMap";
 
 export const metadata = {
   title: "Psicologo Davide Stella",
@@ -243,13 +244,7 @@ export default function Home() {
 
             {/* COLONNA DESTRA - MAPPA */}
             <div className="w-full h-full">
-
-              <iframe
-                className="w-full h-100 rounded-2xl"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73148.30124006855!2d15.149743580618248!3d37.75150184466673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x28fa189e9bec4469%3A0x76fe20e38dc51695!2sPsicologo%20Davide%20Stella!5e1!3m2!1sit!2sit!4v1781172594234!5m2!1sit!2sit"
-                loading="lazy"
-              />
-
+              <GoogleMap />
             </div>
 
           </div>

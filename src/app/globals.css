@@ -74,6 +74,10 @@ p {
   --cc-border-radius: 18px;
 }
 
+#cc-main button,
+#cc-main a {
+  -webkit-tap-highlight-color: rgba(42, 43, 46, 0.15);
+}
 
 #cc-main .cm {
   max-width: 420px;

@@ -18,6 +18,16 @@ export default function CookieBanner() {
         maps: {},
       },
 
+      // 1. Aggiunto onConsent: scatta al primo consenso dell'utente
+      onConsent: () => {
+        window.dispatchEvent(new Event("cookieConsentChanged"));
+      },
+
+      // 2. onChange: scatta se l'utente modifica preferenze già salvate
+      onChange: () => {
+        window.dispatchEvent(new Event("cookieConsentChanged"));
+      },
+
 
       language: {
         default: "it",
