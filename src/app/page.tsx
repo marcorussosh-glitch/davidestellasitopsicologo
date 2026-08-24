@@ -15,7 +15,7 @@ export default function Home() {
     <main className="w-full">
       <Header />
       {/* HERO */}
-      <SectionReveal>
+      <SectionReveal>ciao
         <section className="flex flex-col md:flex-row items-center justify-center text-center md:text-left min-h-[95vh] px-6 md:px-12">
 
           {/* IMMAGINE */}
