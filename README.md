@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Psicologo Davide Stella
 
-## Getting Started
+Sito web vetrina realizzato per il **Dott. Davide Stella, Psicologo Clinico**, con l'obiettivo di presentare i servizi offerti, fornire informazioni sullo studio e facilitare il contatto e la prenotazione di un colloquio.
 
-First, run the development server:
+## Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Sito:** [(https://www.davidestellapsicologo.it)]
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologie
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Next.js 16** — framework React per lo sviluppo dell'applicazione
+* **React 19** — sviluppo dell'interfaccia e dei componenti
+* **TypeScript** — tipizzazione statica
+* **Tailwind CSS 4** — styling e responsive design
+* **vanilla-cookieconsent** — gestione del consenso ai cookie
+* **Google Maps** — integrazione della posizione dello studio
+* **Vercel** — hosting e deploy
+* **Git / GitHub** — versionamento del codice
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Funzionalità
 
-## Learn More
+* Design responsive per desktop, tablet e mobile
+* Landing page professionale
+* Header e footer condivisi tra le pagine
+* Navigazione interna tramite anchor link
+* Pagine dedicate a Privacy Policy e Cookie Policy
+* Metadata SEO tramite Next.js Metadata API
+* Cookie banner personalizzato
+* Gestione granulare delle preferenze sui cookie
+* Integrazione di Google Maps con caricamento condizionato al consenso dell'utente
+* Dominio personalizzato
+* Deploy automatico tramite Vercel
 
-To learn more about Next.js, take a look at the following resources:
+## Gestione del consenso
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Il progetto utilizza **vanilla-cookieconsent** per la gestione del consenso.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Sono presenti due categorie di cookie:
 
-## Deploy on Vercel
+* **Necessari** — indispensabili per il corretto funzionamento del sito e per la gestione delle preferenze dell'utente.
+* **Google Maps** — utilizzati esclusivamente per consentire la visualizzazione della mappa.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Google Maps viene caricato **solo dopo che l'utente ha espresso il proprio consenso** alla relativa categoria. In assenza del consenso viene mostrato un placeholder informativo che permette all'utente di modificare le proprie preferenze.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Responsive Design
+
+L'interfaccia è stata sviluppata con un approccio responsive, adattando layout, tipografia, immagini e componenti alle diverse dimensioni dello schermo.
+
+Particolare attenzione è stata dedicata alla visualizzazione mobile del menu, delle sezioni informative, del banner cookie e della modale delle preferenze.
+
+## Privacy
+
+Il progetto include:
+
+* Privacy Policy
+* Cookie Policy
+* Cookie banner
+* Gestione delle preferenze dell'utente
+* Blocco preventivo dei servizi di terze parti soggetti a consenso
+
+## Licenza
+
+Questo progetto è stato realizzato per un cliente e il codice non è destinato al riutilizzo commerciale senza autorizzazione.
